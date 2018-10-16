@@ -39,6 +39,7 @@ public class LinkList {
             current = current.next;
         }
         System.out.println("");
+        System.out.println();
     }
 
 }
