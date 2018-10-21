@@ -7,26 +7,27 @@ public class Link {
     public int power;
     public Link next;
 
-    public Link(int factor, int power){
+    public Link(int factor, int power) {
 
-        this.power=power;
+        this.power = power;
         this.factor = factor;
-
 
     }
 
-    public int getFactor(){
+    public Link() {
+    }
 
+    public int getFactor() {
         return factor;
     }
 
-    public int getPower(){
+    public int getPower() {
 
         return power;
     }
 
-    public void displayLink(){
+    public void displayLink() {
 
-        System.out.println("{" + factor + " , " + power +" }");
+        System.out.println("{" + factor + " , " + power + " }");
     }
 }

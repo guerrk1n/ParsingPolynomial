@@ -5,12 +5,7 @@ public class LinkList {
 
     public Link first;
 
-    public boolean isEmpty() {
-
-        return (first == null);
-    }
-
-    public boolean isDigit(char c){
+    public boolean isDigit(char c) {
 
         return Character.isDigit(c);
     }
@@ -23,16 +18,25 @@ public class LinkList {
 
     }
 
-    public Link deleteFirst() {
 
-        Link temp = first;
-        first = first.next;
-        return temp;
+    public String isNumber(int i, String number){
 
+        String number_full = "";
+        for(int j=i; j<number.length(); j++){
+
+            if(isDigit(number.charAt(j))){
+
+                number_full+=number.charAt(j);
+            }
+
+        }
+
+        return number_full;
     }
 
+
     public void displayList() {
-        System.out.print("List (first-->last): ");
+        System.out.println("List (first-->last): ");
         Link current = first;
         while (current != null) {
             current.displayLink();
@@ -41,5 +45,4 @@ public class LinkList {
         System.out.println("");
         System.out.println();
     }
-
 }
